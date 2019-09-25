@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/ice-penguin/node-wxpay/issues"
   },
-  "homepage": "https://github.com/ice-penguin/node-wxpay#readme"
+  "homepage": "https://github.com/ice-penguin/node-wxpay#readme",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "request": "^2.88.0"
+  }
 }

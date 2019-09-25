@@ -1,26 +1,10 @@
-## Install 安装
+var cert = "";
+var key = "";
+var state = "";
+var appid = "";
+var appsecret = "";
+var mch_id = "";
 
-> use npm isntall
->
-> 使用npm安装 
-
-```
-npm install node-wxpay
-```
-
-> [download](https://github.com/ice-penguin/node_alipay_face2face/) from github
->
-> 从github[下载](https://github.com/ice-penguin/node-wxpay)
-
-## Introduce 模块说明 
-
-> 该模块支持微信支付常用支付方式，包含当面付，公众号支付，h5支付等，请求结果返回promise对象。参数规则参照[微信支付文档](<https://pay.weixin.qq.com/wiki/doc/api/sl.html>)
-
-## Sample example  使用说明
-
-### init Client 初始化支付客户端
-
-```
 /**
  * 初始化微信支付客户端
  * @author penguinhj
@@ -41,11 +25,9 @@ var wxpay = require('../index').initClient({
 	appsecret:appsecret,//微信公众号appsecret
 	mch_id:mch_id//微信商户号
 });
-```
 
-### micropay 条码支付
+console.log("wxpay",wxpay);
 
-```
 /**
  * 条码支付
  * @author penguinhj
@@ -73,11 +55,9 @@ var micropay = function(){
 		console.log(err);
 	})
 }
-```
 
-### precreate 统一下单接口
+// micropay();//134527277372873274
 
-```
 /**
  * 发起微信统一下单，返回下单结果
  * @author penguinhj
@@ -111,11 +91,9 @@ var precreate = function(){
 		console.log(err);
 	})
 }
-```
 
-### query 订单查询
+// precreate();//
 
-```
 /**
  * 订单查询
  * @author penguinhj
@@ -135,11 +113,9 @@ var query = function(){
 		console.log(err);
 	})
 }
-```
 
-### close 订单关闭
+// query();//
 
-```
 /**
  * 订单关闭
  * @author penguinhj
@@ -159,11 +135,9 @@ var close = function(){
 		console.log(err);
 	})
 }
-```
 
-### reverse 订单撤销
+// close();//
 
-```
 /**
  * 订单撤销
  * @author penguinhj
@@ -183,11 +157,9 @@ var reverse = function(){
 		console.log(err);
 	})
 }
-```
 
-### refund 订单退款
+// reverse();//
 
-```
 /**
  * 订单退款
  * @author penguinhj
@@ -213,5 +185,5 @@ var refund = function(){
 		console.log(err);
 	})
 }
-```
 
+// refund();//
