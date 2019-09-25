@@ -5,7 +5,7 @@
 > 使用npm安装 
 
 ```
-npm install node-wxpay
+npm install node-wxpay2
 ```
 
 > [download](https://github.com/ice-penguin/node_alipay_face2face/) from github

@@ -1,6 +1,6 @@
 {
-  "name": "node-wxpay",
-  "version": "1.0.0",
+  "name": "node-wxpay2",
+  "version": "1.1.0",
   "description": "wxpay",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "wxpay",
     "nodejs"
   ],
-  "author": "penguinhj",
+  "author": "hjpenguin",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ice-penguin/node-wxpay/issues"
