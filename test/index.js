@@ -18,8 +18,8 @@ var mch_id = "";
  * @param    {[String]}                 mch_id [微信商户号]
  */
 var wxpay = require('../index').initClient({
-	cert:cert,//公钥文件
-	key:key,//私钥文件
+	cert:cert,//公钥文件，或者私钥字符串，
+	key:key,//私钥文件，或者私钥字符串，
 	state:state,//客户端模式,normal普通商户，server服务商，默认为普通商户
 	appid:appid,//微信公众号appid
 	appsecret:appsecret,//微信公众号appsecret
