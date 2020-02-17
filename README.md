@@ -30,7 +30,7 @@ npm install node-wxpay2
  * @param    {[String]}                 key [私钥文件，调用部分接口需传]
  * @param    {[String]}                 state [客户端模式,normal普通商户，server服务商，默认为普通商户]
  * @param    {[String]}                 appid [微信公众号appid]
- * @param    {[String]}                 appsecret [微信公众号appsecret]
+ * @param    {[String]}                 apiKey [微信商户号的apiKey,apiKey]
  * @param    {[String]}                 mch_id [微信商户号]
  */
 var wxpay = require('../index').initClient({
@@ -38,7 +38,7 @@ var wxpay = require('../index').initClient({
 	key:key,//私钥文件
 	state:state,//客户端模式,normal普通商户，server服务商，默认为普通商户
 	appid:appid,//微信公众号appid
-	appsecret:appsecret,//微信公众号appsecret
+	apiKey:apiKey,//微信商户号的apiKey,apiKey
 	mch_id:mch_id//微信商户号
 });
 ```

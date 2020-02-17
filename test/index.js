@@ -2,7 +2,7 @@ var cert = "";
 var key = "";
 var state = "";
 var appid = "";
-var appsecret = "";
+var apiKey = "";
 var mch_id = "";
 
 /**
@@ -14,7 +14,7 @@ var mch_id = "";
  * @param    {[String]}                 key [私钥文件，调用部分接口需传]
  * @param    {[String]}                 state [客户端模式,normal普通商户，server服务商，默认为普通商户]
  * @param    {[String]}                 appid [微信公众号appid]
- * @param    {[String]}                 appsecret [微信公众号appsecret]
+ * @param    {[String]}                 appsecret [微信商户号的apiKey,apiKey]
  * @param    {[String]}                 mch_id [微信商户号]
  */
 var wxpay = require('../index').initClient({
@@ -22,9 +22,10 @@ var wxpay = require('../index').initClient({
 	key:key,//私钥文件，或者私钥字符串，
 	state:state,//客户端模式,normal普通商户，server服务商，默认为普通商户
 	appid:appid,//微信公众号appid
-	appsecret:appsecret,//微信公众号appsecret
+	apiKey:apiKey,//微信商户号的apiKey,apiKey
 	mch_id:mch_id//微信商户号
 });
+
 
 console.log("wxpay",wxpay);
 
