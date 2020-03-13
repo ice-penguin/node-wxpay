@@ -215,3 +215,23 @@ var refund = function(){
 }
 ```
 
+### payParams 支付桥签名
+
+```
+/**
+ * 支付桥签名
+ * @param    {[String]}         package [支付桥id参数，prepay_id=12345]
+ */
+var payParams = function(){
+	wxpay.payParams({
+		package:"prepay_id=12345"
+	})
+	.then(function(obj){
+		console.log(obj);
+	})
+	.catch(function(err){
+		console.log(err);
+	})
+}
+```
+
