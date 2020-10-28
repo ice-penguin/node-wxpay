@@ -64,6 +64,7 @@ var micropay = function(){
  * @author penguinhj
  * @DateTime 2019-09-25T15:04:09+0800
  * @param    {[String]}                 body [商品描述]
+ * @param    {[String]}                 sub_appid [商户公众号id,server模式下需传]
  * @param    {[String]}                 out_trade_no [商户系统内部订单号]
  * @param    {[Number]}                 total_fee [订单总金额，单位为分]
  * @param    {[String]}                 spbill_create_ip [终端IP,APP和网页支付提交用户端ip]
@@ -75,6 +76,7 @@ var micropay = function(){
  */
 var precreate = function(){
 	wxpay.precreate({
+		sub_appid:"",
 		sub_mch_id:"1494502962",
 		body:"刷卡支付测试",
 		out_trade_no:"134768271160424787",
